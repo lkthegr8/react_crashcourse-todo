@@ -6,7 +6,7 @@ function Todos(props) {
     // console.log(props.todos) 
 
     // the method mark complete
-    return props.todos.map((todo) => <Todoitem key={todo.id} todo={todo} delTodo={props.delTodo} markComplete={props.markComplete}/>
+    return props.todos.map((todo,index) => <Todoitem key={index} todo={todo} delTodo={props.delTodo} markComplete={props.markComplete}/>
     );
 }
 
